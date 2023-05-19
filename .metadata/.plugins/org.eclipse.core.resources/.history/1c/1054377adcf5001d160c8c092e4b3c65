@@ -49,7 +49,7 @@ public class Banco {
 	public double deposito(double valor){
 		if(valor < 0)
 			throw new ArithmeticException("Valor não pode ser negativo");
-		return this.saldoContaCorrente += valor;
+		return valor + this.saldoContaCorrente;
 	}
 
 	

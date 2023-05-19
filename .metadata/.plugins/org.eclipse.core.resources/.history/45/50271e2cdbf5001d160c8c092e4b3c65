@@ -13,18 +13,16 @@ public class App{
 		//conta.saque(4000, "conta");
 		
 		//teste metodo saque
-		conta.saque(100, "conta");
+		conta.saque(50, "conta");
 		System.out.println(conta.getSaldoContaCorrente());
 		
-		//teste metodo saque error numberNegativo
+		//teste metodo saque error numerNegativo
 		//conta.saque(-59, "conta");
 		
 		//teste deposito
 		conta.deposito(50);
-		System.out.println(conta.getSaldoContaCorrente());
 		
-		//teste deposito error numberNegativo
-		//conta.deposito(-50);
+		conta.deposito(-50);
 		
 		//teste transferencia
 		conta.transferencia(conta2, 50);

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;br.com.fiap.bank.NumberCannotBeNegative&apos; to &apos;App&apos;&#x0D;&#x0A;- Original project: &apos;Bank&apos;&#x0D;&#x0A;- Original element: &apos;br.com.fiap.bank.NumberCannotBeNegative&apos;&#x0D;&#x0A;- Renamed element: &apos;br.com.fiap.bank.App&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;NumberCannotBeNegative&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;br.com.fiap.bank{NumberCannotBeNegative.java[NumberCannotBeNegative" matchStrategy="1" name="App" qualified="false" references="true" similarDeclarations="false" stamp="1684454189639" textual="false" version="1.0"/>
+</session>

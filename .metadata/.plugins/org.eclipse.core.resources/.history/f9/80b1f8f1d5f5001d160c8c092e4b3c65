@@ -1,0 +1,77 @@
+package br.com.fiap.bank;
+
+public class Banco {
+	private String nome;
+	private double saldoContaCorrente, poupanca;
+	private int id;
+	
+	public Banco(String nome, double saldo, double poupanca,  int id) {
+			super();
+			this.nome = nome;
+			this.saldoContaCorrente = saldo;
+			this.poupanca = poupanca;
+			this.id = gerarId();
+		}
+	
+	private static int contadorIds = 0;
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public double getSaldoContaCorrente() {
+		return saldoContaCorrente;
+	}
+	public void setSaldoContaCorrente(double saldo) {
+		this.saldoContaCorrente = saldo;
+	}
+	public double getPoupanca() {
+		return poupanca;
+	}
+	public void setPoupanca(double poupança) {
+		this.poupanca = poupança;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	 private int gerarId() {
+		 	contadorIds++;
+	        return contadorIds; 
+	 }
+
+	
+	public double deposito(double valor){
+		if(valor < 0)
+			throw new ArithmeticException("Valor não pode ser negativo");
+		return valor;
+	}
+
+	public double saque(double valor, Banco tipoConta){
+		if(valor > this.saldoContaCorrente )
+			throw new ArithmeticException("Valor não pode ser negativo");
+		return valor;
+		if(tipoConta)
+	}
+	
+	
+	public double transferencia(Banco destino, double valor) {
+        if (valor < 0)
+            throw new ArithmeticException("Valor não pode ser negativo");
+
+        if (destino.getId() == this.id)
+            throw new RuntimeException("Erro: não é possível transferir para a mesma conta");
+
+        this.saldoContaCorrente -= valor;
+        destino.saldoContaCorrente += valor;
+        
+        return valor;
+    }
+	 
+}
+

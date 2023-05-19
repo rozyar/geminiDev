@@ -1,0 +1,59 @@
+package br.com.fiap.bank;
+
+public class Banco {
+	private String nome;
+	private double saldo, poupanca;
+	private int id;
+	
+	public Banco(String nome, double saldo, double poupanca,  int id) {
+			super();
+			this.nome = nome;
+			this.saldo = saldo;
+			this.poupanca = poupanca;
+			this.id = gerarId();
+		}
+	
+	
+	
+	public String getNome() {
+		return nome;
+	}
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+	public double getSaldo() {
+		return saldo;
+	}
+	public void setSaldo(double saldo) {
+		this.saldo = saldo;
+	}
+	public double getPoupanca() {
+		return poupanca;
+	}
+	public void setPoupanca(double poupança) {
+		this.poupanca = poupança;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	
+	 private int gerarId() {
+	        int contadorIds = 0;
+		 	contadorIds++;
+	        return contadorIds; 
+	 }
+
+	
+	private double deposito(double valor){
+		if(valor < 0)
+			throw new ArithmeticException("Valor não pode ser negativo");
+	return valor;
+	}
+
+	
+	 
+}
+

@@ -1,0 +1,11 @@
+package br.com.fiap.bank;
+
+public class App{
+	
+	public static void main(String[] args) {
+		Banco conta = new Banco("Juze", 3000, 10000, 0);
+		Banco conta2 = new Banco("pedrao", 3000, 10000, 0);
+		
+		System.out.println(conta2.getId());
+	}
+}

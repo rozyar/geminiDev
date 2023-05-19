@@ -1,0 +1,9 @@
+package br.com.fiap.bank;
+
+public class NumberCannotBeNegative extends ArithmeticException {
+	
+	public NumberCannotBeNegative(int valor) {
+		if(valor < 0);
+			throw new ArithmeticException("Valor não pode ser negativo");
+	}
+}

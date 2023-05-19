@@ -54,10 +54,7 @@ public class Banco {
 
 	
 	public double saque(double valor, String tipoConta){
-		if(valor < 0) {
-			throw new ArithmeticException("Valor não pode ser negativo");
-		}
-	    if(tipoConta.equals("poupanca") || tipoConta.equals("poupança")){
+	    if(tipoConta.equals("poupanca")){
 	        throw new ArithmeticException("Não é possível sacar da conta poupança");
 	    }
 	    if(valor > this.saldoContaCorrente){

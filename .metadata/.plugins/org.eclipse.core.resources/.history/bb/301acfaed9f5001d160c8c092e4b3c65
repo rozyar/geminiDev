@@ -12,22 +12,10 @@ public class App{
 		//teste error excedendo o saldo da conta
 		//conta.saque(4000, "conta");
 		
-		//teste metodo saque
 		conta.saque(50, "conta");
 		System.out.println(conta.getSaldoContaCorrente());
 		
-		//teste metodo saque error numerNegativo
-		//conta.saque(-59, "conta");
-		
-		//teste transferencia
-		conta.transferencia(conta2, 50);
-		System.out.println(conta2.getSaldoContaCorrente());
-		
-		//teste transferencia error mesma conta
-		conta.transferencia(conta, 50);
-		
-		
-		//teste saque error poupanca
+		//teste saque erro poupanca
 		//conta.saque(50, "poupança");
 	}
 }

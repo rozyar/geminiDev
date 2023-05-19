@@ -14,18 +14,11 @@ public class App{
 		
 		//teste metodo saque
 		conta.saque(50, "conta");
-		System.out.println(conta.getSaldoContaCorrente());
 		
 		//teste metodo saque error numerNegativo
-		//conta.saque(-59, "conta");
+		conta.saque(-59, "conta");
 		
-		//teste transferencia
-		conta.transferencia(conta2, 50);
-		System.out.println(conta2.getSaldoContaCorrente());
-		
-		//teste transferencia error mesma conta
-		conta.transferencia(conta, 50);
-		
+		System.out.println(conta.getSaldoContaCorrente());
 		
 		//teste saque error poupanca
 		//conta.saque(50, "poupança");
